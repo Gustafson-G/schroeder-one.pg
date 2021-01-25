@@ -585,3 +585,10 @@ img {
     width: 300px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .home_img {
+    right: 10%;
+    width: 200px;
+  }
+}
