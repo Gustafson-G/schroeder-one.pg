@@ -409,6 +409,7 @@ img {
 .bg-desc:hover {
   background: #532166;
   color: #fff;
+  transition: 1s;
 }
 
 .bg-list {
