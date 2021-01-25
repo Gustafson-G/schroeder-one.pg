@@ -168,6 +168,10 @@ img {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.home_img {
+    right: 10%;
+    width: 200px;
+  }
 
 /* Active menu */
 .active::after {
@@ -583,12 +587,5 @@ img {
   .home_img {
     right: 10%;
     width: 300px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .home_img {
-    right: 10%;
-    width: 200px;
   }
 }
