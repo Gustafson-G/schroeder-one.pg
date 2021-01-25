@@ -586,7 +586,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .home_img {
     right: 10%;
     width: 200px;
