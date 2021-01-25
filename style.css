@@ -224,7 +224,7 @@ img {
   color: #532166;
 }
 .home_img {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   width: 295px;
