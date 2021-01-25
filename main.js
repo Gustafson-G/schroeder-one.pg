@@ -12,7 +12,7 @@ const showMenu = (toggleId, navId) =>{
 showMenu('nav-toggle','nav-menu')
 
 /*===== ACTIVE AND REMOVE MENU =====*/
-const navLink = document.querySelectorAll('.nav__link');   
+const navLink = document.querySelectorAll('.nav_link');   
 
 function linkAction(){
 /*Active link*/
@@ -25,7 +25,11 @@ navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-//Get the button
+
+
+
+
+//Get TOP button
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -45,6 +49,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
   origin: 'top',
@@ -54,12 +60,12 @@ const sr = ScrollReveal({
 });
 
 /*SCROLL HOME*/
-sr.reveal('.home__title',{}); 
+sr.reveal('.home_title',{}); 
 sr.reveal('.button',{delay: 200}); 
-sr.reveal('.home__desc',{delay: 200}); 
-sr.reveal('.home__desc2',{delay: 250}); 
-sr.reveal('.home__img',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
+sr.reveal('.home_desc',{delay: 200}); 
+sr.reveal('.home_desc2',{delay: 250}); 
+sr.reveal('.home_img',{delay: 400}); 
+sr.reveal('.icons',{ delay: 400}); 
 
 /*SCROLL SERVICES*/
 sr.reveal('.services section',{}); 
@@ -67,22 +73,18 @@ sr.reveal('.job-1',{delay: 400});
 sr.reveal('.job-2',{delay: 400}); 
 sr.reveal('.job-3',{delay: 400}); 
 
-/*SCROLL ENVIRONMENTS*/
-sr.reveal('.environments__subtitle',{}); 
-sr.reveal('.environments__text',{delay: 200}); 
-sr.reveal('.environments__data',{interval: 200}); 
-sr.reveal('.environments__img',{delay: 600});
 
 /*SCROLL BACKGROUND*/
-sr.reveal('.background__subtitle',{}); 
-sr.reveal('.owner-img',{delay: 200}); 
+sr.reveal('.background_subtitle',{}); 
+sr.reveal('.owner-img',{delay: 400}); 
 sr.reveal('.bg-name',{delay: 400}); 
 sr.reveal('.bg-desc',{delay: 400});
 sr.reveal('.bg-list',{delay: 400});
 
 
-/*SCROLL WORK*/
-sr.reveal('.work__img',{interval: 200}); 
+/*SCROLL ENVIRONMENTS & ARTWORK*/
+
+sr.reveal('.work_img',{delay: 400}); 
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__input',{interval: 200}); 
+sr.reveal('.contact_input',{interval: 200}); 
