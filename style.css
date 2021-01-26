@@ -141,7 +141,7 @@ img {
     transition: 0.5s;
   }
   .home_img {
-    right: 10%;
+    /*right: 10%;*/
     width: 50px;
   }
 }
