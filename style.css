@@ -142,7 +142,7 @@ img {
   }
   .home_img {
     right: 10%;
-    width: 5px;
+    width: 50px;
   }
 }
 .nav_item {
@@ -225,8 +225,8 @@ img {
 }
 .home_img {
   position: relative;
-  width: 95px;
-  top: 10px;
+  width: 150px;
+  top: 1px;
 }
 
 /* buttons */
