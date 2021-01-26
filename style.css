@@ -226,6 +226,7 @@ img {
 .home_img {
   position: relative;
   width: 95px;
+  top: 10px;
 }
 
 /* buttons */
