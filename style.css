@@ -6,8 +6,8 @@
 }
 
 :root {
-  --first-color: #a6b9e2;
-  --second-color: #532166;
+  --first-color: #DBD5C7;
+  --second-color: #6678A6;
 }
 
 :root {
@@ -81,7 +81,7 @@ img {
   position: relative;
   font-size: var(--h2-font-size);
   color: var(--first-color);
-  margin-top: var(--mb-2);
+  margin-top: 4rem;
   margin-bottom: var(--mb-4);
   text-align: center;
 }
@@ -129,7 +129,7 @@ img {
   align-items: center;
   font-weight: var(--font-semi);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav_menu {
     position: fixed;
     top: var(--header-height);
@@ -139,10 +139,6 @@ img {
     padding: 2rem;
     background-color: var(--second-color);
     transition: 0.5s;
-  }
-  .home_img {
-    /*right: 10%;*/
-    width: 50px;
   }
 }
 .nav_item {
@@ -173,7 +169,6 @@ img {
   cursor: pointer;
 }
 
-
 /* Active menu */
 .active::after {
   position: absolute;
@@ -200,7 +195,8 @@ img {
 }
 .home_title {
   font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
+  margin-bottom: 0.5rem;
+  margin-top: 4rem;
 }
 .home_title-color {
   color: var(--first-color);
@@ -216,17 +212,20 @@ img {
 
 .icons {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
-  font-size: 2em !important;
+  font-size: 4rem !important;
   display: block;
 }
-.icons:hover {
-  color: #532166;
+
+.fa-phone-volume:hover, .fa-sms:hover, .fa-at:hover {
+  color: var(--first-color);
 }
+
 .home_img {
   position: relative;
-  width: 150px;
-  top: 1px;
+  width: 300px;
+  margin: 0 auto;
 }
 
 /* buttons */
@@ -247,7 +246,7 @@ img {
 }
 
 #myBtn:hover {
-  background-color: #532166;
+  background-color:var(--first-color);
 }
 
 .button {
@@ -259,7 +258,7 @@ img {
   border-radius: 0.5rem;
 }
 .button:hover {
-  box-shadow: 0 10px 36px #532166;
+  box-shadow: 0 10px 36px var(--second-color);
 }
 
 /* services */
@@ -282,7 +281,8 @@ img {
 
 .job-1 {
   display: flex;
-  color: #532166;
+  color: var(--second-color);
+  transition: background 2.5s;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -293,13 +293,14 @@ img {
 }
 
 .job-1:hover {
-  background: #532166;
+  background: var(--second-color);
   color: #fff;
 }
 
 .job-2 {
   display: flex;
-  color: #532166;
+  color: var(--second-color);
+  transition: background 2.5s;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -310,13 +311,14 @@ img {
 }
 
 .job-2:hover {
-  background: #532166;
+  background: var(--second-color);
   color: #fff;
 }
 
 .job-3 {
   display: flex;
-  color: #532166;
+  color: var(--second-color);
+  transition: background 2.5s;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -327,7 +329,7 @@ img {
 }
 
 .job-3:hover {
-  background: #532166;
+  background: var(--second-color);
   color: #fff;
 }
 
@@ -375,6 +377,97 @@ img {
   transform: scale(1.1);
 }
 
+/* artwork divide */
+.filter-menu {
+  margin-bottom: 20px;
+}
+.filter-menu li {
+  display: inline-block;
+  padding: 10px 18px;
+  background: var(--second-color);
+  color: #fff;
+  cursor: pointer;
+}
+.filter-menu li:hover,
+.filter-menu li.current {
+  background: var(--first-color);
+}
+
+/*
+.work_img {
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.work_img img {
+  transition: 1s;
+  cursor: pointer;
+}
+.work_img img:hover {
+  transform: scale(1.1);
+}
+*/
+
+
+.filter-item li {
+  width: 50%;
+  padding: 2px;
+  float: left;
+}
+
+.filter-item li.active {
+  width: 50%;
+  height: 50%
+  padding: 2px;
+  transition: all 0.5s ease;
+}
+
+.filter-item li.delete {
+  width: 0%;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+
+.filter-item img {
+  display: block;
+  width: 333px;
+  height: 100%;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.img-desc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.72);
+  color: #000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.filter-item img:hover {
+  transform: scale(1.1);
+    }
+
+.filter-item:hover .img-desc {
+  visibility: visible;
+  opacity: 1;
+}
 /* background */
 .owner-img {
   display: block;
@@ -383,7 +476,7 @@ img {
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 70%;
 }
 .bg-name {
   display: block;
@@ -394,30 +487,37 @@ img {
 
 .bg-desc {
   display: flex;
-  color: #532166;
+  color: #fff;
+  background-color: var(--second-color);
+  transition: background 1s;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   position: relative;
-  padding: 1rem 20%;
+  padding: .5rem 5rem;
+  width: 60%;
+  margin: 0 auto;
   margin-bottom: var(--mb-4);
   border-radius: 0.5rem;
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 }
 
 .bg-desc:hover {
-  background: #532166;
-  color: #fff;
-  transition: 1s;
+  background: var(--first-color);
+  color: #000;
 }
 
 .bg-list {
   display: block;
-  color: #532166;
+  color: #fff;
+  background-color: var(--second-color);
+  transition: background 1s;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 0.5rem 1rem;
+  padding: .5rem 0.5rem;
+  width: 60%;
+  margin: 0 auto;
   margin-bottom: var(--mb-4);
   border-radius: 0.5rem;
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
@@ -446,8 +546,8 @@ img {
 }
 
 .bg-list:hover {
-  background: #532166;
-  color: #fff;
+  background: var(--first-color);
+  color: #000;
 }
 
 /* contact */
@@ -547,9 +647,9 @@ img {
     margin-right: var(--mb-4);
   }
   .home_img {
-    width: 200px;
-    bottom: 1%;
-    right: 10%;
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
   }
 
   .services_container,
@@ -586,7 +686,8 @@ img {
     margin-right: auto;
   }
   .home_img {
-    right: 10%;
-    width: 300px;
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
   }
 }
