@@ -495,7 +495,7 @@ img {
   text-align: center;
   position: relative;
   padding: .5rem 5rem;
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: var(--mb-4);
   border-radius: 0.5rem;
@@ -516,7 +516,7 @@ img {
   align-items: center;
   position: relative;
   padding: .5rem 0.5rem;
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: var(--mb-4);
   border-radius: 0.5rem;
