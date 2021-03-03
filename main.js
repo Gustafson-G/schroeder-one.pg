@@ -29,6 +29,8 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 
+
+
 //Get TOP button
 var mybutton = document.getElementById("myBtn");
 
@@ -51,6 +53,8 @@ function topFunction() {
 
 
 
+
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
   origin: 'top',
@@ -63,55 +67,60 @@ const sr = ScrollReveal({
 sr.reveal('.home_title',{}); 
 sr.reveal('.button',{delay: 200}); 
 sr.reveal('.home_desc',{delay: 200}); 
-sr.reveal('.home_desc2',{delay: 250}); 
-sr.reveal('.home_img',{delay: 400}); 
-sr.reveal('.icons',{ delay: 400}); 
+sr.reveal('.home_desc2',{delay: 200});
+sr.reveal('.home_img',{delay: 200}); 
+sr.reveal('.icons',{ delay: 200}); 
 
 /*SCROLL SERVICES*/
 sr.reveal('.services section',{}); 
-sr.reveal('.job-1',{delay: 400});
-sr.reveal('.job-2',{delay: 400}); 
-sr.reveal('.job-3',{delay: 400}); 
+sr.reveal('.job-1',{delay: 200});
+sr.reveal('.job-2',{delay: 200}); 
+sr.reveal('.job-3',{delay: 200}); 
 
 
 /*SCROLL BACKGROUND*/
 sr.reveal('.background_subtitle',{}); 
-sr.reveal('.owner-img',{delay: 400}); 
-sr.reveal('.bg-name',{delay: 400}); 
-sr.reveal('.bg-desc',{delay: 400});
-sr.reveal('.bg-list',{delay: 400});
+sr.reveal('.owner-img',{delay: 200}); 
+sr.reveal('.bg-name',{delay: 200}); 
+sr.reveal('.bg-desc',{delay: 200});
+sr.reveal('.bg-list',{delay: 200});
 
 
 /*SCROLL ENVIRONMENTS & ARTWORK*/
 
-sr.reveal('.work_img',{delay: 400}); 
+sr.reveal('#env-gal',{delay: 200}); 
+sr.reveal('#art-gal',{delay: 200});
+sr.reveal('.row',{delay: 200}); 
+
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact_input',{interval: 200}); 
+sr.reveal('.contact_input',{delay: 200});
+sr.reveal('.contact-info',{delay: 200}); 
 
 /* ARTWORK DIVIDE */
-let sortBtn = document.querySelector('.filter-menu').children;
-let sortItem = document.querySelector('.filter-item').children;
+$(document).ready(function(){
 
-for(let i = 0; i < sortBtn.length; i++){
-    sortBtn[i].addEventListener('click', function(){
-        for(let j = 0; j< sortBtn.length; j++){
-            sortBtn[j].classList.remove('current');
-        }
-
-        this.classList.add('current');
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
         
-
-        let targetData = this.getAttribute('data-target');
-
-        for(let k = 0; k < sortItem.length; k++){
-            sortItem[k].classList.remove('active');
-            sortItem[k].classList.add('delete');
-
-            if(sortItem[k].getAttribute('data-item') == targetData || targetData == "all"){
-                sortItem[k].classList.remove('delete');
-                sortItem[k].classList.add('active');
-            }
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
         }
     });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
 }
+$(this).addClass("active");
+
+});
