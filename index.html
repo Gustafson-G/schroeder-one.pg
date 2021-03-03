@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!-- Jquery -->
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 
-        <link rel="stylesheet" href="style.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- LightBox -->
+        <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+
+             <!-- Filter Gal Boot & Jquery -->
+             <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+             <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+             
+              
+        <!-- CSS Animations -->
+       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">-->
+        
+        <!-- FA Icons -->
         <script src="https://kit.fontawesome.com/c82ab85d43.js" crossorigin="anonymous"></script>
+        
+        <!-- Main Font Family -->
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- Menu -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-       <!-- <base href="/schroeder-one.pg/"/> -->
+
         <title>Barbara S Art & Design Studio</title>
+
     </head>
 
 
     <body>
-
-
         <!-- header -->
         <header class="header">
             <nav class="nav grid">
@@ -46,22 +64,26 @@
           <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
             
           
+          
+          
+          
             <!-- home -->
             <section class="home grid" id="home">
                 <div class="home_data">
-                    <!-- <br><br><br> --><h1 class="home_title">Barbara S<br> <span class="home_title-color">Art & Interior Design Studio</span></h1>
+                    <h1 class="home_title">Barbara S<br> <span class="home_title-color">Art & Interior Design Studio</span></h1>
                     <div class="home_img">    
                         <img src="img/stamp_transp.png" alt="">
                     </div>
-                    <p class="home_desc">Design services for those transitioning into a new home, or purchasing a second home.</p><br>
+                    <p class="home_desc">Design services for those transitioning into a new home, or downsizing into a smaller condo or apartment.</p><br>
                     <p class="home_desc2">Original handmade art, rugs, and refinished furniture. Inquire for commissioned pieces below.</p>
                     <br><a href="#contact" class="button">Contact</a>
                 </div>
-
-                
             </section>
 
 
+            
+            
+            
 
             <!-- services -->
             <section class="services section" id="services">
@@ -71,24 +93,24 @@
                     <div class="job-1">
                       <h3>We Help With Planning</h3>
                       <ul id="service-list">
-                        <br></i><li>Interior Design Consultation</li>
-                        <br></i><li>Selection of Furniture & Personal Items</li>
-                        <br><li>Create Floor Plans & Furniture Layouts</li><br>
+                        <li>Interior Design Consultation</li>
+                        <li>Selection of Furniture & Personal Items</li>
+                        <li>Create Floor Plans & Furniture Layouts</li>
                       </ul>
                     </div>
                     <div class="job-2">
                       <h3>We Help With Transition</h3>
                       <ul id="service-list2">
-                        <br><li>Organize Furniture & Personal Items</li>
-                        <br><li>Hang Artwork, Draperies, Shower<br>Curtains, & Shelves</li><br>
+                        <li>Organize Furniture & Personal Items</li>
+                        <li>Hang Artwork, Draperies, Shower<br>Curtains, & Shelves</li>
                       </ul>
                     </div>
                     <div class="job-3">
                       <h3>We Help With Your New Home</h3>
                       <ul id="service-list3">
-                        <br><li>Accessorize as Requested</li>
-                        <br><li>Purchase Household Items as Needed</li>
-                        <br><li>Organize Cabinets & More</li><br>
+                        <li>Accessorize as Requested</li>
+                        <li>Purchase Household Items as Needed</li>
+                        <li>Organize Cabinets & More</li>
                     </ul>
                     </div>
 
@@ -97,43 +119,56 @@
 
 
 
+           
+           
+           
             <!-- environments -->
             <section class="environments section" id="environments">
                 <h2 class="section-title">Environments</h2>
-                  <div class="environments_container grid">          
-                          <div class="work_img">
-                              <img src="img/environments/env11.jpg" alt="">
-                          </div>
-                          <div class="work_img">
-                              <img src="img/environments/env2.jpg" alt="">
-                          </div>
-                          <div class="work_img">
-                              <img src="img/environments/env15.jpg" alt="">
-                          </div>
-                          <div class="work_img">
-                              <img src="img/environments/env25.jpg" alt="">
-                          </div>
-                          <div class="work_img">
-                              <img src="img/environments/env13.jpg" alt="">
-                          </div>
-                          <div class="work_img">
-                              <img src="img/environments/env9.jpg" alt="">
-                          </div>
-                      </div>
-            </section>
+            <div id="wrapper">
+                <ul id="env-gal">
+                  <li><a href="img/environments/env1.JPG" data-lightbox="env" data-title="Living Room"><img src="img/environments/env1.JPG" alt="beautiful living room"></a></li>
+                  
+                  <li><a href="img/environments/env2.jpg" data-lightbox="env" data-title="Kitchen"><img src="img/environments/env2.jpg" alt="old-style ipad icons"></a></li>
+                  
+                  <li><a href="img/environments/env3.jpg" data-lightbox="env" data-title="Kitchen"><img src="img/environments/env3.jpg" alt="mobile iphone app profile ui"></a></li>
+                  
+                  <li><a href="img/environments/env4.jpg" data-lightbox="env" data-title="Bedroom"><img src="img/environments/env4.jpg" alt="new balance shoes"></a></li>
+                  
+                  <li><a href="img/environments/env5.jpg" data-lightbox="env" data-title="Family Room"><img src="img/environments/env5.jpg" alt="rive radio icon"></a></li>
+                  
+                  <li><a href="img/environments/env6.jpg" data-lightbox="env" data-title="Bedroom"><img src="img/environments/env6.jpg" alt="blood pressure app ui"></a></li>
+                  
+                  <li><a href="img/environments/env7.jpg" data-lightbox="env" data-title="Family Room"><img src="img/environments/env7.jpg" alt="memories feed ui iphone"></a></li>
+                  
+                  <li><a href="img/environments/env8.jpg" data-lightbox="env" data-title="Kitchen & Dining"><img src="img/environments/env8.jpg" alt="apple device vector icons"></a></li>
 
+                  <li><a href="img/environments/env9.jpg" data-lightbox="env" data-title="Kitchen & Dining"><img src="img/environments/env9.jpg" alt="apple device vector icons"></a></li>
 
+                  <li><a href="img/environments/env10.jpg" data-lightbox="env" data-title="Kitchen & Dining"><img src="img/environments/env10.jpg" alt="apple device vector icons"></a></li>
+
+                  <li><a href="img/environments/env11.jpg" data-lightbox="env" data-title="Kitchen & Dining"><img src="img/environments/env11.jpg" alt="apple device vector icons"></a></li>
+
+                  <li><a href="img/environments/env12.jpg" data-lightbox="env" data-title="Kitchen & Dining"><img src="img/environments/env12.jpg" alt="apple device vector icons"></a></li>
+
+                </ul>
+              </div>
+</section>
+
+            
+            
+            
 
             <!-- background -->
             <section class="background section" id="background">
                 <h2 class="section-title">Background</h2>
-                <div class="owner-img"><img src="img/Owner.bmp" alt=""></div>
+                <div class="owner-img" style="width:500px"><img src="img/Owner.bmp" alt="" height="500px" width="100%" style="margin:auto"></div>
                 <div class="bg-name">
                   <h3>Barbara Schroeder</h3>
                   
                 </div>
                 <div class="bg-desc">
-                  <p>Barbara Schroeder is an award-winning designer and artist. Her experience allows her to work 
+                  <p class="bg-desc-p">Barbara Schroeder is an award-winning designer and artist. Her experience allows her to work 
                     efficiently and use her expertise to create comfortable, 
                     functional, and appealing living spaces. 
                     As a native of Kearney, Nebraska she has lived and 
@@ -156,84 +191,96 @@
                       handful</li>
                     <li><i class="fas fa-history"></i> 20+ Years Self-Employed:<br>Art & Interior Design Firm</li>
                     <li><i class="fas fa-history"></i> 35+ Years of Design Expertise</li>
-                  </ul>
-              </div>
-
-                
+                </ul>
             </section>
-
-
-
+            
+            
+            
+            
+            
             <!-- artwork -->
-            <!-- <section class="artwork section" id="artwork">
-              <h2 class="section-title">Original Artwork</h2>
-                <div class="artwork_container grid">          
-                        <div class="work_img">
-                            <img src="img/artwork/art1.jpg" alt="">
-                        </div>
-                        <div class="work_img">
-                            <img src="img/artwork/art2.JPG" alt="">
-                        </div>
-                        <div class="work_img">
-                            <img src="img/artwork/art3.jpg" alt="">
-                        </div>
-                        <div class="work_img">
-                            <img src="img/artwork/art4.jpg" alt="">
-                        </div>
-                        <div class="work_img">
-                            <img src="img/artwork/art5.jpg" alt="">
-                        </div>
-                        <div class="work_img">
-                            <img src="img/artwork/art6.jpg" alt="">
-                        </div>
-                    </div>
-          </section> -->
+<section class="artwork section" id="artwork">
+                <h2 class="section-title">Original Artwork</h2>
+                
+                <div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        </div>
 
-          <section class="artwork section" id="artwork">
-            <h2 class="section-title">Original Artwork</h2>
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="furniture">Furniture</button>
+            <button class="btn btn-default filter-button" data-filter="rug">Canvas Rugs</button>
+            <button class="btn btn-default filter-button" data-filter="draw">Paintings & Drawings</button>
+           <!-- <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button> -->
+        </div>
+        
+<div class="wrapper-art">
+           <ul id="art-gal">
+            <li><div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter furniture">
+                <a href="img/artwork/art1.jpg" data-lightbox="art" data-title="Table">
+                <img src="img/artwork/art1.jpg" alt="Table" width="200" height="200" class="img-responsive">
+                </a></div></li>
 
-            <div class="art-divide-container grid">
-                <div class="contain-divide">
-                    <ul class="filter-menu">
-                        <li data-target="all">All</li>
-                        <li data-target="furniture">Furniture</li>
-                        <li data-target="rugs">Canvas Rugs</li>
-                        <li data-target="draw">Paintings & Drawings</li>
-                    </ul>
-            
-                    <ul class="filter-item">
-                        <li data-item="furniture"><img src="img/artwork/art1.jpg" alt=""></li>
-                        <p class="img-desc">Picasso Table</p>
-                        <li data-item="furniture"><img src="img/artwork/art4.jpg" alt=""></li>
-                        <p class="img-desc">Picasso Table2</p>
-                        <li data-item="rugs"><img src="img/artwork/art6.jpg" alt=""></li>
-                        <p class="img-desc">Picasso Tabl3e</p>
-                        <li data-item="rugs"><img src="img/artwork/art7.jpg" alt=""></li>
-                        <p class="img-desc">Picasso T4able</p>
-                        <li data-item="furniture"><img src="img/artwork/art12.jpg" alt=""></li>
-                        <p class="img-desc">Picasso 5Table</p>
-                        <li data-item="draw"><img src="img/artwork/art3.jpg" alt=""></li>
-                        <p class="img-desc">Picasso6 Table</p>
-                        <li data-item="draw"><img src="img/artwork/art10.jpg" alt=""></li>
-                        <p class="img-desc">Picass7o Table</p>
-                        <li data-item="rugs"><img src="img/artwork/art8.jpg" alt=""></li>
-                        <p class="img-desc">Picas8so Table</p>
-                        <li data-item="rugs"><img src="img/artwork/art9.jpg" alt=""></li>
-                        <p class="img-desc">Picas9so Table</p>
-                        <li data-item="furniture"><img src="img/artwork/art2.JPG" alt=""></li>
-                        <p class="img-desc">Picass0o Table</p>
-                        <li data-item="furniture"><img src="img/artwork/art5.jpg" alt=""></li>            
-                        <p class="img-desc">Picas1so Table</p>
-                        <li data-item="draw"><img src="img/artwork/art11.jpg" alt=""></li>
-                        <p class="img-desc">Picass2o Table</p>
-                        <li data-item="rugs"><img src="img/artwork/art13.jpg" alt=""></li>
-                        <p class="img-desc">Picas3so Table</p>
+            <li><div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter draw">
+                <a href="img/artwork/art2.jpg" data-lightbox="art" data-title="Art Divider W/ Chair">
+                <img src="img/artwork/art2.JPG" alt="Art Divider W/ Chair" width="200" height="200" class="img-responsive">
+                </a></div></li>
 
-                    </ul>
-                </div>
-            
-            </div>
-        </section>
+            <li><div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter furniture">
+                <a href="img/artwork/art3.jpg" data-lightbox="art" data-title="Wall Canvas">
+                <img src="img/artwork/art3.jpg" alt="Wall Canvas" width="200" height="200" class="img-responsive">
+                </a></div></li>
+
+            <li><div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter furniture">
+                <a href="img/artwork/art4.jpg" data-lightbox="art" data-title="Flower Chairs">
+                <img src="img/artwork/art4.jpg" alt="Flower Chairs" width="200" height="200" class="img-responsive">
+                </a></div></li>
+
+            <li><div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter furniture">
+               <a href="img/artwork/art5.jpg" data-lightbox="art" data-title="Art Divider W/ Chair">
+                <img src="img/artwork/art5.jpg" alt="Art Divider W/ Chair" width="200" height="200" class="img-responsive">
+                </a></div></li>
+
+            <li><div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter rug">
+                <a href="img/artwork/art6.jpg" data-lightbox="art" data-title="Canvas Rug">
+                <img src="img/artwork/art6.jpg" alt="Canvas Rug" width="200" height="200" class="img-responsive">
+                </a></div></li>
+
+            <li><div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter rug">
+                <a href="img/artwork/art7.jpg" data-lightbox="art" data-title="Canvas Rug">
+                <img src="img/artwork/art7.jpg" alt="Canvas Rug" width="200" height="200" class="img-responsive">
+                </a></div></li>
+
+            <li><div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter rug">
+                <a href="img/artwork/art8.jpg" data-lightbox="art" data-title="Canvas Rug">
+                <img src="img/artwork/art8.jpg" alt="Canvas Rug" width="200" height="200" class="img-responsive">
+                </a></div></li>
+
+            <li><div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter rug">
+                <a href="img/artwork/art9.jpg" data-lightbox="art" data-title="Canvas Rug">
+                <img src="img/artwork/art9.jpg" alt="Canvas Rug" width="200" height="200" class="img-responsive">
+                </a></div></li>
+
+            <li><div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter draw">
+                <a href="img/artwork/art10.jpg" data-lightbox="art" data-title="Art Divider">
+                <img src="img/artwork/art10.JPG" alt="Art Divider" width="200" height="200" class="img-responsive">
+                </a></div></li>
+
+            <li><div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter rug">
+                <a href="img/artwork/art11.jpg" data-lightbox="art" data-title="Canvas Rug">
+                <img src="img/artwork/art11.jpg" alt="Canvas Rug" width="200" height="200" class="img-responsive">
+                </a></div></li>
+
+            <li><div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter furniture">
+                <a href="img/artwork/art12.jpg" data-lightbox="art" data-title="Couch W/ Pillows">
+                <img src="img/artwork/art12.jpg" alt="Couch W/ Pillows" width="200" height="200" class="img-responsive">
+                </a></div></li></ul></div>
+                
+        </div>
+    </div>
+</section>
+
 
 
 
@@ -241,26 +288,40 @@
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
+               <!-- CONTACT FORM -->
                 <div class="contact_container grid">
-                    <form action="" class="contact_form">
-                        <input type="text" placeholder="Name" class="contact_input">
-                        <input type="mail" placeholder="Email" class="contact_input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact_input"></textarea>
+                    <form action="/action_page.php" class="contact_form">
+                        <input type="text" placeholder="Name" class="contact_input" aria-label="Your First And Last Name">
+                        <input type="mail" placeholder="Email" class="contact_input" aria-label="Your Email Address">
+                        <textarea name="message" cols="0" rows="10" class="contact_input" aria-label="Message for Barbara Schroeder"></textarea>
                         <input type="button" value="Send" class="contact_button button">
                     </form>
-                    <div class="icons">
-                      <a href="tel:402-676-7998"><br/>
-                        <i class="fas fa-phone-volume"></i></a>
-                      <a href="sms:402-676-7998">
-                        <i class="fas fa-sms"></i></a>
-                      <a href="mailto:katajuta52@gmail.com">
-                        <i class="fas fa-at"></i></a>
-                    </div>
                 </div>
-            </section>
-            
-            
-        </main>
+                
+                
+                <!-- Contact Cards -->
+                <div class="contact-info">
+      <div class="card">
+       <a href="mailto:katajuta52@gmail.com" aria-label="Email Barbara Schroeder Now">
+           <i class="card-icon fas fa-at"></i></a>
+        <p>katajuta52@gmail.com</p>
+      </div>
+
+      <div class="card">
+       <a href="tel:402-676-7998" aria-label="Call Barbara Schroeder Now">
+           <i class="card-icon fas fa-phone-volume"></i></a>
+           <p>402-676-7998</p>
+      </div>
+
+      <div class="card">
+        <i class="card-icon fas fa-map-marker-alt"></i>
+        <p>Omaha, USA</p>
+      </div>
+    </div>
+</section>
+</main>
+
+
 
 
 
@@ -277,6 +338,11 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!-- main javascript -->
-        <script src="main.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- lightbox js -->
+       <script src="js/lightbox.js"></script>
+        
+
     </body>
 </html>
