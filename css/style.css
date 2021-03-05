@@ -57,7 +57,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  background: #fcfcfc url(schroeder-one.pg/img/bg.png);
+  background: #fcfcfc url(../img/bg.png);
 }
 h1,
 h2,
