@@ -57,7 +57,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  background: #fcfcfc url(../img/bg.png);
+  background: #fcfcfc url(../img/marble.jpg);
 }
 h1,
 h2,
